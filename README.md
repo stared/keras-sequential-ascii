@@ -1,10 +1,18 @@
 # Sequential model in Keras -> ASCII
 
-by [Piotr Migdał](http://p.migdal.pl/) from [deepsense.io](http://deepsense.io/)
+by [Piotr Migdał](http://p.migdal.pl/)
 
-See: https://github.com/fchollet/keras/issues/3873
+A library for [Keras](https://keras.io/) for investigating architectures and parameters of sequential models.
 
-## Install
+Both `model.summary()` and graph export were not enough - I wanted array dimensions, numbers of parameters and activation functions in one place.
+I use it for didactic purpose.
+
+* TODO
+  * Add ASCII art for more layers.
+  * Go beyond simple sequential models (e.g. to allow *merge* layers); any ideas how?
+  * Consider PRing to the main Keras repo, see [#3873](https://github.com/fchollet/keras/issues/3873).
+
+## Installation
 
 ```
 pip install git+git://github.com/stared/keras-sequential-ascii.git
@@ -16,11 +24,6 @@ pip install git+git://github.com/stared/keras-sequential-ascii.git
 from keras_sequential_ascii import sequential_model_to_ascii_printout
 sequential_model_to_ascii_printout(model)
 ```
-
-## Rationale
-
-Both `model.summary()` and graph export were not enough - I wanted dimensions, numbers of parameters and activation functions in one place.
-I use it for didactic purpose.
 
 ## Examples
 
