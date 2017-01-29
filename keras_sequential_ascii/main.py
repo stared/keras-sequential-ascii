@@ -1,11 +1,16 @@
 graphics = {
+    "Convolution1D": " \|/ ",
     "Convolution2D": " \|/ ",
     "Activation": "|||||",
     "Flatten": "|||||",
+    "MaxPooling1D": "YYYYY",
     "MaxPooling2D": "YYYYY",
     "Dropout": " | ||",
     "Dense": "XXXXX",
-    "ZeroPadding2D": "\|||/"
+    "ZeroPadding1D": "\|||/",
+    "ZeroPadding2D": "\|||/",
+    "BatchNormalization": "|(n)|",
+    "Embedding": "(emb)"
 }
 
 def jsonize(model):
@@ -36,8 +41,8 @@ def compress_layers(jsonized_layers):
     return res
 
 # data_template = "{activation:>15s}   #####   {shape} = {length}"
-data_template = "{activation:>15s}   #####   {shape}"
-layer_template = "{kind:>15s}   {graphics} -------------------{n_parameters:10d}   {percent_parameters:5.1f}%"
+data_template = "{activation:>20s}   #####   {shape}"
+layer_template = "{kind:>20s}   {graphics} -------------------{n_parameters:10d}   {percent_parameters:5.1f}%"
 
 def product(iterable):
     res = 1
@@ -53,7 +58,7 @@ def print_layers(jsonized_layers, sparser=False, simplify=False, header=True):
     all_weights = sum([each["n_parameters"] for each in jsonized_layers])
 
     if header:
-        print("      OPERATION           DATA DIMENSIONS   WEIGHTS(N)   WEIGHTS(%)\n")
+        print("           OPERATION           DATA DIMENSIONS   WEIGHTS(N)   WEIGHTS(%)\n")
 
     print(data_template.format(
             activation="Input",
