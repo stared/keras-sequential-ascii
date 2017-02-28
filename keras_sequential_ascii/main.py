@@ -52,6 +52,12 @@ def product(iterable):
         res *= each
     return res
 
+def print_dim_tuple(t):
+    if len(t) > 1:
+        return " ".join(["{:4d}".format(x) for x in t])
+    else:
+        return  "{:9d}".format(t[0])
+
 def print_layers(jsonized_layers, sparser=False, simplify=False, header=True):
 
     if simplify:
@@ -64,7 +70,7 @@ def print_layers(jsonized_layers, sparser=False, simplify=False, header=True):
 
     print(data_template.format(
             activation="Input",
-            shape=" ".join([str(x) for x in jsonized_layers[0]["input_shape"]]),
+            shape=print_dim_tuple(jsonized_layers[0]["input_shape"]),
             # length=product(jsonized_layers[0]["output_shape"])
     ))
 
@@ -85,7 +91,7 @@ def print_layers(jsonized_layers, sparser=False, simplify=False, header=True):
 
         print(data_template.format(
                 activation=each["activation"] if each["activation"] != "linear" else "",
-                shape=" ".join([str(x) for x in each["output_shape"]]),
+                shape=print_dim_tuple(each["output_shape"]),
                 # length=product(each["output_shape"])
         ))
 
