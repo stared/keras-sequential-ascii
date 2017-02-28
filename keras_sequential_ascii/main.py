@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 graphics = {
     "Convolution1D": " \|/ ",
     "Convolution2D": " \|/ ",
@@ -9,7 +11,7 @@ graphics = {
     "Dense": "XXXXX",
     "ZeroPadding1D": "\|||/",
     "ZeroPadding2D": "\|||/",
-    "BatchNormalization": "|(n)|",
+    "BatchNormalization": " μ|σ ",
     "Embedding": "(emb)"
 }
 
