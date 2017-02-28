@@ -62,7 +62,7 @@ def print_layers(jsonized_layers, sparser=False, simplify=False, header=True):
 
     print(data_template.format(
             activation="Input",
-            shape=jsonized_layers[0]["input_shape"],
+            shape=" ".join([str(x) for x in jsonized_layers[0]["input_shape"]]),
             # length=product(jsonized_layers[0]["output_shape"])
     ))
 
@@ -83,7 +83,7 @@ def print_layers(jsonized_layers, sparser=False, simplify=False, header=True):
 
         print(data_template.format(
                 activation=each["activation"] if each["activation"] != "linear" else "",
-                shape=each["output_shape"],
+                shape=" ".join([str(x) for x in each["output_shape"]]),
                 # length=product(each["output_shape"])
         ))
 
