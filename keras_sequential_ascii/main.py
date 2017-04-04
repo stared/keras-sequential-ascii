@@ -1,18 +1,42 @@
 from __future__ import unicode_literals
 
 graphics = {
+    "InputLayer": "  |  ",
     "Convolution1D": " \|/ ",
     "Convolution2D": " \|/ ",
-    "Activation": "|||||",
+    "Convolution3D": " \|/ ",
+    "Conv1D": " \|/ ",
+    "Conv2D": " \|/ ",
+    "Conv3D": " \|/ ",
+    "Conv2DTranspose": " /|\ ",
+    "SeparableConv2D": r" /|\x",
+    "UpSampling1D": "AAAAA",
+    "UpSampling2D": "AAAAA",
+    "UpSampling3D": "AAAAA",
+    "Cropping1D": " ||| ",
+    "Cropping2D": " ||| ",
+    "Cropping2D": " ||| ",
+    "Activation": " f| ",
     "Flatten": "|||||",
-    "MaxPooling1D": "YYYYY",
-    "MaxPooling2D": "YYYYY",
+    "MaxPooling1D": "Y max",
+    "MaxPooling2D": "Y max",
+    "MaxPooling3D": "Y max",
+    "AveragePooling1D": "Y avg",
+    "AveragePooling2D": "Y avg",
+    "AveragePooling3D": "Y avg",
+    "GlobalMaxPooling1D": "Y^max",
+    "GlobalMaxPooling2D": "Y^max",
+    "GlobalAveragePooling1D": "Y^avg",
+    "GlobalAveragePooling2D": "Y^avg",
     "Dropout": " | ||",
     "Dense": "XXXXX",
     "ZeroPadding1D": "\|||/",
     "ZeroPadding2D": "\|||/",
+    "ZeroPadding3D": "\|||/",
     "BatchNormalization": " μ|σ ",
-    "Embedding": "(emb)"
+    "Reshape": "  |  ",
+    "Permute": "  |  ",
+    "Embedding": "emb |"
 }
 
 def jsonize(model):
