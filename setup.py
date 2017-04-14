@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='keras_sequential_ascii',
-      version='0.0.1',
+      version='0.1.0',
       install_requires=['keras'],
       author="Piotr Migdal",
       author_email="pmigdal@gmail.com",
