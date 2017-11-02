@@ -12,6 +12,10 @@ I use it for didactic purpose.
   * Go beyond simple sequential models (e.g. to allow *merge* layers); any ideas how?
   * Consider PRing to the main Keras repo, see [#3873](https://github.com/fchollet/keras/issues/3873).
 
+See this library in the wild, for example:
+
+* [Cifar-10 Classification using Keras Tutorial](https://blog.plon.io/tutorials/cifar-10-classification-using-keras-tutorial/) at Plon.io
+
 ## Installation
 
 ```
