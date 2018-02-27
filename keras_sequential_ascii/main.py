@@ -36,7 +36,8 @@ graphics = {
     "BatchNormalization": " μ|σ ",
     "Reshape": "  |  ",
     "Permute": "  |  ",
-    "Embedding": "emb |"
+    "Embedding": "emb |",
+    "LSTM": " LLLLL "
 }
 
 def jsonize(model):
