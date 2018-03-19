@@ -18,6 +18,15 @@ See this library in the wild, for example:
 
 ## Installation
 
+From PyPI:
+
+```
+pip install keras_sequential_ascii
+```
+
+Or from this repo:
+
+
 ```
 pip install git+git://github.com/stared/keras-sequential-ascii.git
 ```
@@ -25,8 +34,8 @@ pip install git+git://github.com/stared/keras-sequential-ascii.git
 ## Usage
 
 ```
-from keras_sequential_ascii import sequential_model_to_ascii_printout
-sequential_model_to_ascii_printout(model)
+from keras_sequential_ascii import keras2ascii
+keras2ascii(model)
 ```
 
 ## Examples
