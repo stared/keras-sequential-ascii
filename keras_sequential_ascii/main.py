@@ -37,7 +37,8 @@ graphics = {
     "Reshape": "  |  ",
     "Permute": "  |  ",
     "Embedding": "emb |",
-    "LSTM": " LLLLL "
+    "LSTM": "LLLLL",
+    "GRU": "LLLLL"
 }
 
 def jsonize(model):
