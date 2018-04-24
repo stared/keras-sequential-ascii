@@ -14,6 +14,7 @@ I use it for didactic purpose.
 
 See this library in the wild, for example:
 
+* [Starting deep learning hands-on: image classification on CIFAR-10](https://blog.deepsense.ai/deep-learning-hands-on-image-classification/) - my post at deepsense.ai
 * [Cifar-10 Classification using Keras Tutorial](https://blog.plon.io/tutorials/cifar-10-classification-using-keras-tutorial/) at Plon.io
 
 ## Installation
