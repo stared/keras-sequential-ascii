@@ -4,6 +4,8 @@ by [Piotr Migdał](http://p.migdal.pl/)
 
 A library for [Keras](https://keras.io/) for investigating architectures and parameters of sequential models.
 
+**(discontinuted)** For more general approaches, see: [Simple diagrams of convoluted neural networks](https://medium.com/inbrowserai/simple-diagrams-of-convoluted-neural-networks-39c097d2925b)
+
 Both `model.summary()` and graph export were not enough - I wanted array dimensions, numbers of parameters and activation functions in one place.
 I use it for didactic purpose.
 
@@ -16,6 +18,8 @@ See this library in the wild, for example:
 
 * [Starting deep learning hands-on: image classification on CIFAR-10](https://blog.deepsense.ai/deep-learning-hands-on-image-classification/) - my post at deepsense.ai
 * [Cifar-10 Classification using Keras Tutorial](https://blog.plon.io/tutorials/cifar-10-classification-using-keras-tutorial/) at Plon.io
+
+
 
 ## Installation
 
